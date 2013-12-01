@@ -30,3 +30,5 @@ D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Projec
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\snake game\obj\Debug\snake_game.Form1.resources
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\snake game\obj\Debug\snake_game.Properties.Resources.resources
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\snake game\obj\Debug\snake game.csproj.GenerateResource.Cache
+D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\Snake-game\obj\Debug\snake game.exe
+D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\Snake-game\obj\Debug\snake game.pdb
