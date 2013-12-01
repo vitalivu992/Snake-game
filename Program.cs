@@ -13,9 +13,12 @@ namespace snake_game
         [STAThread]
         static void Main()
         {
+            MyPipeline pp = new MyPipeline();
+            pp.LoopFrames();
+            pp.Dispose();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Drawing;
 
 namespace snake_game
 {
-   public class snake
+   public class Snake
    {
        private Rectangle[] snakeRec;
        private SolidBrush brush;
@@ -18,7 +18,7 @@ namespace snake_game
        
        }
 
-       public snake()
+       public Snake()
        {
            snakeRec = new Rectangle[3];
            brush = new SolidBrush(Color.Black);

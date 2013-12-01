@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace snake_game
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Random randFood = new Random();
 
         Graphics paper;
-        snake snakes = new snake();
+        Snake snakes = new Snake();
         Food food;
         bool left = false;
         bool right = false;
@@ -22,7 +22,7 @@ namespace snake_game
         bool down = false;
         int score = 0;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             food = new Food(randFood);
@@ -129,7 +129,7 @@ namespace snake_game
             score = 0;
             spaceBarLabel.Text = "Press SPACECAR to begin";
             codesmeshlabel.Text = "CODESMESH";
-            snakes =new snake();
+            snakes =new Snake();
 
 
         }
