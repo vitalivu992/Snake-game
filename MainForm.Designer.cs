@@ -1,4 +1,6 @@
-﻿namespace snake_game
+﻿using System;
+
+namespace snake_game
 {
     partial class MainForm
     {
@@ -18,6 +20,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+            Environment.Exit(0) ;
         }
 
         #region Windows Form Designer generated code

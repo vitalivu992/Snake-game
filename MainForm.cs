@@ -20,8 +20,18 @@ namespace snake_game
         bool right = false;
         bool up = false;
         bool down = false;
-        int score = 0;
 
+        //public snake_game.MyPipeline pp;
+
+        public void config(bool _left, bool _right, bool _up, bool _down)
+        {
+            left = _left;
+            right = _right;
+            up = _up;
+            down = _down;
+        }
+        int score = 0;
+        static int dem = 0;
         public MainForm()
         {
             InitializeComponent();
@@ -80,6 +90,11 @@ namespace snake_game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //left = pp1.getLeft();
+            //right = pp1.getRight();
+            //up = pp1.getUp();
+            //down = pp1.getDown();
+            
             snakeScoreLabel.Text = Convert.ToString(score);
             if (down) { snakes.moveDown(); }
             if (up) { snakes.moveUp(); }
@@ -96,6 +111,13 @@ namespace snake_game
                     food.foodlocation(randFood);
                 }
             }
+           // MyPipeline pp = new MyPipeline();
+           //// pp.Init();
+           // pp.LoopFrames();
+           // //pp.Dispose();
+
+
+         
         }
 
         public void collision()
@@ -107,14 +129,36 @@ namespace snake_game
                     restart();
                 }
             }
-            if (snakes.SnakeRec[0].X < 0 || snakes.SnakeRec[0].X > 290)
+
+            for (int i = 1; i < snakes.SnakeRec.Length; i++)
             {
-                restart();
-            
+                //for (int j = 1; j < snakes.SnakeRec.Length; j++)
+                //{
+                    if (snakes.SnakeRec[0].IntersectsWith(snakes.SnakeRec[i]))
+                    {
+                        restart();
+                    }
+                //}
+                
             }
-            if (snakes.SnakeRec[0].Y < 0 || snakes.SnakeRec[0].Y > 290)
+
+            if (snakes.SnakeRec[0].X > 290)
             {
-                restart();
+                //restart();
+                snakes.SnakeRec[0].X = 0;
+            }
+            if (snakes.SnakeRec[0].X < 0)
+            {
+                snakes.SnakeRec[0].X = 290;
+            }
+            if (snakes.SnakeRec[0].Y > 290)
+            {
+                //restart();
+                snakes.SnakeRec[0].Y = 0;
+            }
+            if (snakes.SnakeRec[0].Y < 0)
+            {
+                snakes.SnakeRec[0].Y = 290;
             }
 
         
@@ -129,14 +173,14 @@ namespace snake_game
             score = 0;
             spaceBarLabel.Text = "Press SPACECAR to begin";
             codesmeshlabel.Text = "CODESMESH";
-            snakes =new Snake();
+            snakes = new Snake();
 
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //MyPipeline pp = new MyPipeline(this);
         }
     
     }

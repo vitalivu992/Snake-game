@@ -41,3 +41,13 @@ D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Projec
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\Snake-game\bin\Debug\snake game.pdb
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\Snake-game\bin\Debug\libpxcclr.dll
 D:\Dropbox\My Documents\Hoc tap\SS7 2013-2014\Thi giac may\Intel Creative Project Snake game wt doub Hoang\Snake-game\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\bin\Debug\snake game.exe.config
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\bin\Debug\snake game.exe
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\bin\Debug\snake game.pdb
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\bin\Debug\libpxcclr.dll
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake_game.MainForm.resources
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake_game.Properties.Resources.resources
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake game.csproj.GenerateResource.Cache
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake game.exe
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake game.pdb
+C:\Users\Adventure\Desktop\Computer Vision\Snake-game-master\obj\Debug\snake game.csprojResolveAssemblyReference.cache
