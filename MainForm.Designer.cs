@@ -113,12 +113,13 @@ namespace snake_game
             this.spaceBarLabel.AutoSize = true;
             this.spaceBarLabel.BackColor = System.Drawing.Color.Transparent;
             this.spaceBarLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.spaceBarLabel.Location = new System.Drawing.Point(53, 122);
+            this.spaceBarLabel.Location = new System.Drawing.Point(3, 108);
             this.spaceBarLabel.Name = "spaceBarLabel";
             this.spaceBarLabel.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.spaceBarLabel.Size = new System.Drawing.Size(190, 40);
+            this.spaceBarLabel.Size = new System.Drawing.Size(294, 100);
             this.spaceBarLabel.TabIndex = 1;
-            this.spaceBarLabel.Text = "press SPACE to begin";
+            this.spaceBarLabel.Text = "PRESS SPACE TO BEGIN ADVENTURE\r\n\r\nLinhVT, HoangTH, HoangNV\r\nUET K55CA, Dec 2013";
+            this.spaceBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.spaceBarLabel.Click += new System.EventHandler(this.spaceBarLabel_Click);
             // 
             // MainForm
@@ -132,11 +133,12 @@ namespace snake_game
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Snake game 2013";
+            this.Text = "Snake 2013 - Intel perceptual computing game";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

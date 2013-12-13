@@ -30,6 +30,10 @@ namespace snake_game
                 if (sts < pxcmStatus.PXCM_STATUS_NO_ERROR) break;
                 try
                 {
+                    if (data.label == PXCMGesture.Gesture.Label.LABEL_POSE_THUMB_DOWN)
+                    {
+                        form.restart();
+                    }
                     if (data.label == PXCMGesture.Gesture.Label.LABEL_NAV_SWIPE_DOWN)
                     {
                         Console.WriteLine("down", data.label);

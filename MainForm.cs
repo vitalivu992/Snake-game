@@ -170,7 +170,7 @@ namespace snake_game
             level = 1.0;
             snakeSpeed.Text = "100%";
             timer1.Interval = 150;
-            spaceBarLabel.Text = "press SPACE to begin";
+            spaceBarLabel.Text = "PRESS SPACE TO BEGIN ADVENTURE";
             snakes = new Snake();
         }
 
