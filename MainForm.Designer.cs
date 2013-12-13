@@ -37,8 +37,6 @@ namespace snake_game
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.snakeScoreLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.spaceBarLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.codesmeshlabel = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,38 +76,17 @@ namespace snake_game
             this.spaceBarLabel.TabIndex = 1;
             this.spaceBarLabel.Text = "Press SPACEBAR to begin ";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 305);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CodesMesh";
-            // 
-            // codesmeshlabel
-            // 
-            this.codesmeshlabel.AutoSize = true;
-            this.codesmeshlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codesmeshlabel.Location = new System.Drawing.Point(67, 9);
-            this.codesmeshlabel.Name = "codesmeshlabel";
-            this.codesmeshlabel.Size = new System.Drawing.Size(156, 25);
-            this.codesmeshlabel.TabIndex = 3;
-            this.codesmeshlabel.Text = "CODESMESH";
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(290, 322);
-            this.Controls.Add(this.codesmeshlabel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.spaceBarLabel);
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -129,8 +106,6 @@ namespace snake_game
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel snakeScoreLabel;
         private System.Windows.Forms.Label spaceBarLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label codesmeshlabel;
     }
 }
 

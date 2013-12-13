@@ -1,7 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snake game", "snake game.csproj", "{B26B0F30-69DF-40CD-A15C-551793315C16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3153DB29-30F8-4A68-B523-8FF0933E106E}"
+	ProjectSection(SolutionItems) = preProject
+		images\tile-active.bmp = images\tile-active.bmp
+		images\tile-food-special.bmp = images\tile-food-special.bmp
+		images\tile-food.bmp = images\tile-food.bmp
+		images\tile.bmp = images\tile.bmp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

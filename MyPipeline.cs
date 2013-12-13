@@ -4,11 +4,11 @@ namespace snake_game
 {
     class MyPipeline : UtilMPipeline
     {
-        public snake_game.MainForm formed;
+        public snake_game.MainForm form;
 
-        public MyPipeline(MainForm formed)
+        public MyPipeline(MainForm form)
         {
-            this.formed = formed;
+            this.form = form;
             EnableGesture();
         }
 
@@ -18,29 +18,6 @@ namespace snake_game
             EnableGesture();
         }
 
-        bool left = false;
-        bool right = false;
-        bool up = false;
-        bool down = false;
-
-        public bool getLeft()
-        {
-            return left;
-        }
-
-        public bool getRight()
-        {
-            return right;
-        }
-
-        public bool getUp()
-        {
-            return up;
-        }
-        public bool getDown()
-        {
-            return down;
-        }
         //public override void OnGestureSetup(ref PXCMGesture.ProfileInfo profile) {}
 
         // sdk can recognize some predefine gesture: swipe left/top/right/down, action: wave circle, hand pose: thumb up/down victory, big5
@@ -55,53 +32,36 @@ namespace snake_game
                 {
                     if (data.label == PXCMGesture.Gesture.Label.LABEL_NAV_SWIPE_DOWN)
                     {
-                        Console.WriteLine("Just swipe down", data.label);
-                        formed.config(false, false, false, true);
-                        //down = true;
-                        //up = false;
-                        //left = false;
-                        //right = false;
-                        //Environment.Exit(0);
-                        //break;
+                        Console.WriteLine("down", data.label);
+                        if (!form.getUp())
+                        {
+                            form.config(false, false, false, true);
+                        }
                     }
-                    //Console.WriteLine("Just swipe down", data.label);
                     if (data.label == PXCMGesture.Gesture.Label.LABEL_NAV_SWIPE_LEFT)
                     {
-                        Console.WriteLine("Just swipe left", data.label);
-                        formed.config(true, false, false, false);
-
-                        //down = false;
-                        //up = false;
-                        //left = true;
-                        //right = false;
-                        //break;
+                        Console.WriteLine("left", data.label);
+                        if (!form.getRight())
+                        {
+                            form.config(true, false, false, false);
+                        }
                     }
-                    // Console.WriteLine("Just swipe left", data.label);
                     if (data.label == PXCMGesture.Gesture.Label.LABEL_NAV_SWIPE_RIGHT)
                     {
-                        Console.WriteLine("Just swipe right", data.label);
-
-                        formed.config(false, true, false, false);
-
-                        //down = false;
-                        //up = false;
-                        //left = false;
-                        //right = true;
-                        //break;
+                        Console.WriteLine("right", data.label);
+                        if (!form.getLeft())
+                        {
+                            form.config(false, true, false, false);
+                        }
                     }
-                    // Console.WriteLine("Just swipe right", data.label);
                     if (data.label == PXCMGesture.Gesture.Label.LABEL_NAV_SWIPE_UP)
                     {
-                        Console.WriteLine("Just swipe up", data.label);
-
-                        formed.config(false, false, true, false);
-                        //down = false;
-                        //up = true;
-                        //left = false;
-                        //right = false;
-                        //break;
+                        Console.WriteLine("up", data.label);
+                        if (!form.getDown())
+                        {
+                            form.config(false, false, true, false);
+                        }
                     }
-                    //Console.WriteLine("Just swipe up", data.label);
                 }
                 catch (NullReferenceException e)
                 {

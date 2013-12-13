@@ -31,7 +31,6 @@ namespace snake_game
             down = _down;
         }
         int score = 0;
-        static int dem = 0;
         public MainForm()
         {
             InitializeComponent();
@@ -51,7 +50,6 @@ namespace snake_game
             if (e.KeyData == Keys.Space)
             {
                 timer1.Enabled = true;
-                codesmeshlabel.Text= "";
                 spaceBarLabel.Text = "";
                 down = false;
                 up = false;
@@ -172,7 +170,6 @@ namespace snake_game
             snakeScoreLabel.Text = "0";
             score = 0;
             spaceBarLabel.Text = "Press SPACECAR to begin";
-            codesmeshlabel.Text = "CODESMESH";
             snakes = new Snake();
 
 
@@ -180,7 +177,25 @@ namespace snake_game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MyPipeline pp = new MyPipeline(this);
+        }
+
+        public bool getLeft()
+        {
+            return left;
+        }
+
+        public bool getRight()
+        {
+            return right;
+        }
+
+        public bool getUp()
+        {
+            return up;
+        }
+        public bool getDown()
+        {
+            return down;
         }
     
     }

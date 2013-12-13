@@ -9,19 +9,19 @@ namespace snake_game
    public class Snake
    {
        private Rectangle[] snakeRec;
-       private SolidBrush brush;
+       //private SolidBrush brush;
+       private TextureBrush brush;
        private int x, y, width, height;
        public Rectangle[] SnakeRec
        {
-           get { return snakeRec; }
-       
-       
+           get { return snakeRec; }       
        }
 
        public Snake()
        {
            snakeRec = new Rectangle[3];
-           brush = new SolidBrush(Color.Black);
+           //brush = new SolidBrush(Color.Black);
+           brush = new TextureBrush(new Bitmap(@"images/tile-active.bmp"));
 
            x = 20;
            y = 0;

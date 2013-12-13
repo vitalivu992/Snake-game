@@ -9,18 +9,21 @@ namespace snake_game
     public class Food
     {
         private int x, y, width, height;
-        private SolidBrush brush;
+        //private SolidBrush brush;
+        private TextureBrush brush;
         public Rectangle foodRec;
 
         public Food(Random randFood)
         {
             x = randFood.Next(0, 29) * 10;
             y = randFood.Next(0, 29) * 10;
-            brush = new SolidBrush(Color.Black);
+            //brush = new SolidBrush(Color.Black);
+            brush = new TextureBrush(new Bitmap(@"images/tile-food.bmp"));
             width = 10;
-            height=10;
+            height= 10;
             foodRec = new Rectangle(x, y, width, height);
-}
+        }
+
         public void foodlocation(Random randFood)
         {
             x = randFood.Next(0, 29) * 10;
