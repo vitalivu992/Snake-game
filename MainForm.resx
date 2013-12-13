@@ -123,4 +123,17 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk3GAQAAAAAAADYAAAAoAAAACgAAAAoAAAABACAAAAAAAAAAAAASFwAAEhcAAAAAAAAAAAAA1vPw/9/s
+        6v/f7ev/4O3r/9/t6//f7ev/4O3r/9/t6//f7Or/1vPw/9/s6v/b8O3/0fnz/9L48v/S+PL/0vjy/9L4
+        8v/R+fP/2/Dt/9/s6v/f7ev/0Pjz/8z79f/X8u//1fTw/9X08P/X8u//zPv1/9D48//f7ev/4O3r/9H4
+        8//X8u//6+Hj/+jk5f/o5OX/6+Hj/9fy7//R+PP/4O3r/9/t6//S+fP/1vTw/+jk5f/l5+f/5efn/+jk
+        5f/W9PD/0vnz/9/t6//f7ev/0vnz/9b08P/o5OX/5efn/+Xn5//o5OX/1vTw/9L58//f7ev/4O3r/9H4
+        8//X8u//6+Hj/+jk5f/o5OX/6+Hj/9fy7//R+PP/4O3r/9/t6//Q+PP/zPv1/9fy7//V9PD/1fTw/9fy
+        7//M+/X/0Pjz/9/t6//f7Or/2/Dt/9H58//S+PL/0vjy/9L48v/S+PL/0fnz/9vw7f/f7Or/1vPw/9/s
+        6v/f7ev/4O3r/9/t6//f7ev/4O3r/9/t6//f7Or/1vPw/w==
+</value>
+  </data>
 </root>

@@ -65,6 +65,7 @@ namespace snake_game
                 }
                 catch (NullReferenceException e)
                 {
+                    Console.WriteLine(e);
                     
                 }
                 
