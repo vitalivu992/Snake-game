@@ -22,7 +22,8 @@ namespace snake_game
         bool down = false;
 
         int score = 0;
-        int speed = 1;
+        double level = 1.0;
+        int foodCount = 0;
 
         //public snake_game.MyPipeline pp;
 
@@ -92,7 +93,8 @@ namespace snake_game
         private void timer1_Tick(object sender, EventArgs e)
         {            
             snakeScoreLabel.Text = Convert.ToString(score);
-            snakeSpeed.Text = Convert.ToString(speed);
+            snakeLevel.Text = Convert.ToString( (int)level);
+            snakeSpeed.Text = Convert.ToString( (int) 150*100 / timer1.Interval)+"%";
             if (down) { snakes.moveDown(); }
             if (up) { snakes.moveUp(); }
             if (right) { snakes.moveRight(); }
@@ -103,8 +105,19 @@ namespace snake_game
             {
                 if (snakes.SnakeRec[i].IntersectsWith(food.foodRec))
                 {
-                    score += speed;
-                    snakes.growSnake();
+                    timer1.Interval -= (int)level;
+                    if (timer1.Interval <= 16)
+                    {
+                        timer1.Interval = 16;
+                    }
+                    level *= 1.023;
+                    score += (int)(level * level);
+                    foodCount++;
+                    if (foodCount % (int)(2*level) == 0)
+                    {
+                        snakes.growSnake();
+                        foodCount = 0;
+                    }
                     food.foodlocation(randFood);
                 }
             }         
@@ -143,20 +156,20 @@ namespace snake_game
             if (snakes.SnakeRec[0].Y < 0)
             {
                 snakes.SnakeRec[0].Y = 290;
-            }
-
-        
+            }       
             
         }
 
         public void restart()
         {
             timer1.Enabled = false;
-            MessageBox.Show("GAME OVER");
+            MessageBox.Show(score + " points! You are the winner of level "+(int)level+"!!!");
             snakeScoreLabel.Text = "0";
             score = 0;
-            snakeSpeed.Text = "0";
-            speed = 0;
+            snakeLevel.Text = "1";
+            level = 1.0;
+            snakeSpeed.Text = "100%";
+            timer1.Interval = 150;
             spaceBarLabel.Text = "press SPACE to begin";
             snakes = new Snake();
         }
@@ -215,6 +228,11 @@ namespace snake_game
         }
 
         private void currLevel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel2_Click_1(object sender, EventArgs e)
         {
 
         }

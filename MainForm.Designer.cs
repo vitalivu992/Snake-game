@@ -38,6 +38,8 @@ namespace snake_game
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.snakeScoreLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.snakeLevel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.snakeSpeed = new System.Windows.Forms.ToolStripStatusLabel();
             this.spaceBarLabel = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
@@ -45,6 +47,7 @@ namespace snake_game
             // 
             // timer1
             // 
+            this.timer1.Interval = 150;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // statusStrip1
@@ -54,6 +57,8 @@ namespace snake_game
             this.toolStripStatusLabel1,
             this.snakeScoreLabel,
             this.toolStripStatusLabel2,
+            this.snakeLevel,
+            this.toolStripStatusLabel3,
             this.snakeSpeed});
             this.statusStrip1.Location = new System.Drawing.Point(0, 300);
             this.statusStrip1.Name = "statusStrip1";
@@ -81,14 +86,27 @@ namespace snake_game
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(40, 17);
-            this.toolStripStatusLabel2.Text = "SPEED";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(38, 17);
+            this.toolStripStatusLabel2.Text = "LEVEL";
+            this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click_1);
+            // 
+            // snakeLevel
+            // 
+            this.snakeLevel.Name = "snakeLevel";
+            this.snakeLevel.Size = new System.Drawing.Size(13, 17);
+            this.snakeLevel.Text = "1";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(40, 17);
+            this.toolStripStatusLabel3.Text = "SPEED";
             // 
             // snakeSpeed
             // 
             this.snakeSpeed.Name = "snakeSpeed";
-            this.snakeSpeed.Size = new System.Drawing.Size(13, 17);
-            this.snakeSpeed.Text = "1";
+            this.snakeSpeed.Size = new System.Drawing.Size(35, 17);
+            this.snakeSpeed.Text = "100%";
             // 
             // spaceBarLabel
             // 
@@ -137,6 +155,8 @@ namespace snake_game
         private System.Windows.Forms.ToolStripStatusLabel snakeScoreLabel;
         private System.Windows.Forms.Label spaceBarLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel snakeLevel;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel snakeSpeed;
     }
 }
